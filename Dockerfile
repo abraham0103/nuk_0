@@ -9,5 +9,5 @@ RUN set -ex; \
 ENV APP_HOME /app
 WORKDIR $APP_HOME
 COPY . ./
-# DOCKER
+# DOCKER prueba
 CMD exec gunicorn --bind :$PORT_NUK --workers 1 --threads 8 --timeout 0 main:app
