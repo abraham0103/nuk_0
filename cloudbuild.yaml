@@ -36,9 +36,9 @@ steps:
 
 availableSecrets:
   secretManager:
-  - versionName: projects/$PROJECT_ID/secrets/user/versions/latest
+  - versionName: projects/108508101139/secrets/user
     env: USER
-  - versionName: projects/$PROJECT_ID/secrets/db_pass/versions/latest
+  - versionName: projects/108508101139/secrets/db_pass
     env: PASS
 
 
