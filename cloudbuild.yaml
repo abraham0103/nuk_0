@@ -30,7 +30,7 @@ steps:
   entrypoint: bash
   args:
   - '-c'
-  - 'gcloud run deploy final-app --image ${_IMAGE} --region us-east1 --platform managed --allow-unauthenticated --port 8097 --max-instances 2 --set-env-vars=DB_USER=$$USER,DB_PASS=$$PASS,DB_NAME=rookie,CLOUD_SQL_CONNECTION_NAME=crud-f2dd6:us-east1:test-nuka-cola'
+  - 'gcloud run deploy final-app --image ${_IMAGE} --region us-east1 --platform managed --allow-unauthenticated --port 8097 --max-instances 2 --set-env-vars=DB_USER=$USER,DB_PASS=$PASS,DB_NAME=rookie,CLOUD_SQL_CONNECTION_NAME=crud-f2dd6:us-east1:test-nuka-cola'
   secretEnv: ['PASS', 'USER']
   waitFor: ['installer']
 
