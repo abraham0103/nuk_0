@@ -43,7 +43,7 @@ availableSecrets:
 
 
 substitutions:
-  _IMAGE: gcr.io/${PROJECT_ID}/app
+  _IMAGE: gcr.io/${PROJECT_ID}/my-app-final-1012
 
 images:
 - ${_IMAGE}
